@@ -205,3 +205,15 @@ h1 {
 .contact_page h2 {
   letter-spacing: 0.4rem;
 }
+footer {
+  background-color: #e63455;
+  color: white;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em 0;
+}
+footer a {
+  color: black;
+}
