@@ -39,9 +39,10 @@ body {
 .logo {
   background-color: rgb(230, 52, 82);
   border-radius: 0% 100% 4% 96% / 65% 34% 66% 35%;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   display: flex;
+  font-size: 1vmax;
   justify-content: center;
   align-items: center;
   margin: 1em 0;
@@ -76,7 +77,7 @@ body {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   letter-spacing: 0.2em;
   color: white;
   padding: 2em 1em;
@@ -100,12 +101,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url(./images/nathan-anderson-n5c2IPdFJSU-unsplash.jpg) no-repeat;
+  background: linear-gradient(
+    90deg,
+    rgb(2, 129, 123),
+    rgb(14, 105, 101),
+    rgb(2, 90, 86)
+  );
   background-size: 100vmax;
   color: white;
 }
 .name p {
-  font-size: 2em;
+  font-size: 2vmax;
   color: white;
   font-weight: 900;
   letter-spacing: 0.2em;
@@ -117,14 +123,14 @@ body {
   color: #e63455;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 3vmax;
   letter-spacing: 0.3em;
   text-shadow: 0px 1px 12px rgba(0, 0, 0, 0.6);
 }
 
 .hero_title {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.5vmax;
   color: white;
 }
 
@@ -134,18 +140,18 @@ h1 {
 }
 
 .project_img {
-  height: 200px;
+  height: 12vmax;
   width: auto;
   transition: ease-out 0.8s;
 }
-.project_img:hover {
-  transform: scale(1.1);
+.project_link_container:hover {
+  cursor: pointer;
+  background-color: #aaa;
 }
 .img_footer {
-  background-color: white;
   color: black;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1vm;
   margin-top: -4px;
 }
 .projects a {
@@ -160,9 +166,10 @@ h1 {
 .projects {
   margin: 0 auto;
   display: grid;
-  gap: 6em;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-bottom: 2em;
+  gap: 2vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 0 2em 0;
 }
 
 .card {
@@ -193,7 +200,7 @@ h1 {
   transform: scale(1.1);
 }
 .text {
-  font-size: 2rem;
+  font-size: 2vmax;
   margin-bottom: 2em;
   letter-spacing: 0.4rem;
 }
@@ -243,4 +250,17 @@ footer {
 }
 footer a {
   color: black;
+}
+
+@media only screen and (max-width: 900px) {
+  .navlinks a {
+    font-size: 0.8rem;
+  }
+  .projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
 }
