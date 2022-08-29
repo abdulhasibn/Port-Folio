@@ -12,7 +12,7 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
-a {
+.logo a {
   text-decoration: none;
 }
 .container {
@@ -34,7 +34,7 @@ a {
   align-items: center;
 }
 .logo {
-  background-color: #e63455;
+  background-color: rgb(230, 52, 82);
   border-radius: 0% 100% 4% 96% / 65% 34% 66% 35%;
   width: 100px;
   height: 100px;
@@ -106,7 +106,6 @@ a {
 }
 .my-name {
   font-family: "Roboto", sans-serif;
-  text-shadow: 0px 1px 12px rgba(0, 0, 0, 0.6);
 }
 .first-letter {
   color: #e63455;
@@ -114,6 +113,7 @@ a {
 h1 {
   font-size: 3rem;
   letter-spacing: 0.3em;
+  text-shadow: 0px 1px 12px rgba(0, 0, 0, 0.6);
 }
 
 .hero_title {
@@ -187,10 +187,13 @@ h1 {
 .text {
   font-size: 2rem;
   margin-bottom: 2em;
+  letter-spacing: 0.4rem;
 }
 .about_me {
   padding: 3em 0;
   text-align: justify;
+  color: black;
+  background: linear-gradient(180deg, #fff, rgb(245, 93, 93)) fixed;
 }
 .about_me h2 {
   font-size: 2rem;
@@ -211,8 +214,15 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-.contact_page h2 {
-  letter-spacing: 0.4rem;
+.contacts_container {
+  margin-top: 3em;
+  display: flex;
+  gap: 2em;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 1em;
 }
 footer {
   background-color: #e63455;
