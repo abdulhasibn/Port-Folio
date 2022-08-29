@@ -12,6 +12,9 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+a {
+  text-decoration: none;
+}
 .container {
   width: 100%;
   margin: 0;
@@ -32,13 +35,19 @@ body {
 }
 .logo {
   background-color: #e63455;
-  border-radius: 50%;
+  border-radius: 0% 100% 4% 96% / 65% 34% 66% 35%;
   width: 100px;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 1em 0;
+  transition: 0.8s;
+  border: 0;
+}
+.logo:hover {
+  cursor: pointer;
+  border-radius: 86% 14% 48% 52% / 20% 34% 66% 80%;
 }
 .logo p {
   color: white;
