@@ -201,7 +201,7 @@ h1 {
   padding: 3em 0;
   text-align: justify;
   color: black;
-  background: linear-gradient(180deg, #fff, rgb(245, 93, 93)) fixed;
+  background: linear-gradient(180deg, #fff 50%, rgb(245, 93, 93)) fixed;
 }
 .about_me h2 {
   font-size: 2rem;
