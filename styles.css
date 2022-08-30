@@ -193,8 +193,8 @@ h1 {
 }
 .logo_links {
   display: flex;
-  justify-content: space-between;
-  gap: 2em;
+  justify-content: center;
+  gap: 1em;
   width: 30%;
   margin: 0 auto;
 }
@@ -234,7 +234,7 @@ h1 {
 .contacts_container {
   margin-top: 3em;
   display: flex;
-  gap: 2em;
+  gap: 1em;
 }
 .contacts {
   display: flex;
@@ -278,5 +278,13 @@ footer a {
   }
   .projects {
     grid-template-columns: 1fr 1fr;
+  }
+  .text {
+    font-size: 3vmin;
+  }
+  .contacts_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
