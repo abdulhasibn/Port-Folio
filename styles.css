@@ -269,6 +269,11 @@ footer a {
     height: 150px;
   }
 }
+@media only screen and (max-width: 750px) {
+  .navbar {
+    visibility: hidden;
+  }
+}
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 1.4rem;
