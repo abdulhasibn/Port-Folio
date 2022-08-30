@@ -101,13 +101,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     rgb(2, 129, 123),
     rgb(14, 105, 101),
     rgb(2, 90, 86)
-  );
-  background-size: 100vmax;
+  ); */
+  background: url(/images/nathan-anderson-n5c2IPdFJSU-unsplash.jpg);
+  background-size: cover;
   color: white;
 }
 .name p {
