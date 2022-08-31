@@ -107,7 +107,7 @@ body {
     rgb(14, 105, 101),
     rgb(2, 90, 86)
   );
-  background: url(/images/Bg.jpeg);
+  background: url(./images/Bg.jpeg);
   background-size: cover;
   color: white;
 }
