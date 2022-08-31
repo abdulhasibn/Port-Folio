@@ -89,6 +89,18 @@ body {
   color: black;
   transition: ease-out 0.5s;
 }
+.burger {
+  display: none;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 2px;
+}
 [id] {
   scroll-margin-top: 6em;
 }
@@ -271,8 +283,23 @@ footer a {
   }
 }
 @media only screen and (max-width: 750px) {
-  .navbar {
-    visibility: hidden;
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+  .navlinks {
+    margin: 0;
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform ease-in 0.5s;
+    background-color: rgba(0, 0, 0, 0.4);
   }
 }
 @media only screen and (max-width: 600px) {
@@ -293,4 +320,7 @@ footer a {
     justify-content: center;
     align-items: center;
   }
+}
+.nav-active {
+  transform: translateX(0%);
 }
